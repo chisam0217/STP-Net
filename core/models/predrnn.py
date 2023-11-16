@@ -28,9 +28,9 @@ class RNN(nn.Module):
         self.conv_last = nn.Conv2d(num_hidden[num_layers - 1], self.frame_channel,
                                    kernel_size=1, stride=1, padding=0, bias=False)
 
-    # def forward(self, frames_tensor, mask_true):
-    def forward(self, tmp_frames_tensor):
-        frames_tensor, mask_true = tmp_frames_tensor
+    def forward(self, frames_tensor, mask_true):
+    # def forward(self, tmp_frames_tensor):
+        # frames_tensor, mask_true = tmp_frames_tensor
         # [batch, length, height, width, channel] -> [batch, length, channel, height, width]
         frames = frames_tensor.permute(0, 1, 4, 2, 3).contiguous()
         mask_true = mask_true.permute(0, 1, 4, 2, 3).contiguous()
