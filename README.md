@@ -3,6 +3,6 @@ The implementation of "Robot Motion Planning as Video Prediction: A Spatio-Tempo
 
 Please download the weights from [**Drive**](https://drive.google.com/drive/folders/1PXmYlaQJtNXXJd0GY-Tlt2TI7Rmyl0hg?usp=drive_link) and put them under a [checkpoints/] folder.
 
-For evaluating the performance on 2D random forest environments, please run ComputePath_RandomForest.ipynb.
+For 2D random forest environments, please run ComputePath_RandomForest.ipynb, and download the .npy files from the above link and put them under the folder [Data/].
 
-For evaluating the performance on 2D maze environments, please run ComputePath_Maze.ipynb.
+For 2D maze environments, please run ComputePath_Maze.ipynb.
